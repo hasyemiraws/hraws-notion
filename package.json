@@ -15,7 +15,10 @@
     "@notionhq/client": "^2.2.2",
     "apollo-datasource-rest": "^3.7.0",
     "apollo-server-lambda": "^3.11.1",
+    "autoprefixer": "^10.4.13",
     "graphql": "^16.6.0",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }

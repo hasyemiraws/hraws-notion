@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     typescript: {
         shim: false
     },
+    css: ['~/assets/css/main.css'],
     modules: ['@nuxtjs/apollo'],
     apollo: {
         clients: {
@@ -11,5 +12,11 @@ export default defineNuxtConfig({
             httpEndpoint: process.env.NUXT_API_ENDPOINT || 'http://localhost:9999/.netlify/functions/notion-graphql'
           }
         },
-      },
+    },
+    postcss: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+    },
 })
